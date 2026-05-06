@@ -34,7 +34,7 @@ cd task-manager
 npm install
 ```
 
-##⚙️ Environment Variables
+## ⚙️ Environment Variables
 
 Create a .env file in the root:
 
@@ -43,7 +43,7 @@ DATABASE_URL="postgresql://user:password@localhost:5432/task_manager"
 JWT_SECRET="your_secret_key"
 ```
 
-##▶️ Running the project
+## ▶️ Running the project
 
 ```
 # development
@@ -56,24 +56,24 @@ npm run start:prod
 
 ## 📌 API Endpoints
 
-###Auth
--POST /auth → login user
--GET /auth/me → get current user
-###Tasks (protected)
--POST /task/add → create task
--GET /task → list user tasks
--PATCH /task/:id → update task title
--PATCH /task/:id/complete → mark task as completed
--DELETE /task/:id → delete task
+### Auth
+- POST /auth → login user
+- GET /auth/me → get current user
+### Tasks (protected)
+- POST /task/add → create task
+- GET /task → list user tasks
+- PATCH /task/:id → update task title
+- PATCH /task/:id/complete → mark task as completed
+- DELETE /task/:id → delete task
 
-##🔐 Security
--JWT-based authentication
--Passwords hashed with bcrypt
--Task ownership validation (userId check)
+## 🔐 Security
+- JWT-based authentication
+- Passwords hashed with bcrypt
+- Task ownership validation (userId check)
 
-##📚 Notes
+## 📚 Notes
 
 This project was built for learning backend development with NestJS, focusing on authentication, database relations, and clean architecture.
 
-##🧑‍💻 Author
+## 🧑‍💻 Author
 Rafael Grisante Dallaqua
